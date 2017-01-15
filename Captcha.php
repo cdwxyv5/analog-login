@@ -1,6 +1,6 @@
 <?php
 require_once('snoopy.php');
-    $url='http://210.42.121.241/servlet/CaptchaServlet?action=g';
+    $url='http://221.233.24.27:8080/verifycode.aspx';
     $snoopy=new Snoopy;
     $snoopy->get($url);
     $captcha_cookie=$snoopy->res_cookie;
