@@ -3,7 +3,7 @@
 require_once('snoopy.php');
 if(isset($_POST['id'])){
     $snoopy=new Snoopy;
-    $url='http://210.42.121.241/servlet/Login';
+    $url='http://221.233.24.27:8080/';
     $post_data=array(
     	'id'=>$_POST['id'],
     	'pwd'=>$_POST['pwd'],
@@ -32,7 +32,7 @@ if(isset($_POST['id'])){
 
 $snoopy=new Snoopy;
 $snoopy->cookie=$login_cookie;
-$course_url='http://210.42.121.241/servlet/Svlt_QueryStuLsn?action=queryStuLsn';
+$course_url='http://221.233.24.27:8080/kb.aspx';
 $snoopy->get($course_url);
 $rs=$snoopy->results;
 echo $rs;
